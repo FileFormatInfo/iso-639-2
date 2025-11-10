@@ -2,7 +2,7 @@
 
 [![deploy](https://github.com/FileFormatInfo/iso-639-2/actions/workflows/ghpages-deploy.yaml/badge.svg)](https://github.com/FileFormatInfo/iso-639-2/actions/workflows/ghpages-deploy.yaml)
 [![languages](https://img.shields.io/badge/dynamic/json.svg?label=languages&url=https%3A%2F%2Fiso-639-2.fileformat.info%2Fstatus.json&query=%24.datacount)](https://iso-639-2.fileformat.info/)
-[![Status](https://img.shields.io/nodeping/status/B6RTMJ8A-A6ES-4AVT-8XQK-6LMQJ5DYK7A1.svg?style=flat)](https://nodeping.com/reports/checks/B6RTMJ8A-A6ES-4AVT-8XQK-6LMQJ5DYK7A1)
+[![Status](https://img.shields.io/nodeping/status/QRN5QOX5-8UDM-4HWE-BBI3-28IT8FPBR28Y.svg?style=flat)](https://nodeping.com/reports/checks/QRN5QOX5-8UDM-4HWE-BBI3-28IT8FPBR28Y)
 
 A web app for searching and browsing the ISO 639-2 Languages database.
 
