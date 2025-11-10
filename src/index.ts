@@ -185,6 +185,7 @@ async function main() {
 				hozAlign: "center",
 				responsive: 0,
 				title: "Alpha-3",
+				titleDownload: "alpha_3_b",
 				width: 150,
 			},
 			{
@@ -195,6 +196,7 @@ async function main() {
 				hozAlign: "center",
 				responsive: 0,
 				title: "Terminological",
+				titleDownload: "alpha_3_t",
 				width: 150,
 			},
 			{
@@ -205,28 +207,33 @@ async function main() {
 				hozAlign: "center",
 				responsive: 10,
 				title: "Alpha-2",
+				titleDownload: "alpha_2",
 				width: 150,
 			},
 			{
-				title: "Name (English)",
 				field: "name_en",
 				headerFilter: "input",
 				headerFilterFunc: filterRegex,
 				responsive: 0,
+				title: "Name (English)",
+				titleDownload: "name_en",
 				width: 375,
 			},
 			{
-				title: "Name (French)",
 				field: "name_fr",
 				headerFilter: "input",
 				headerFilterFunc: filterRegex,
 				responsive: 0,
+				title: "Name (French)",
+				titleDownload: "name_fr",
 				width: 375,
 			},
 		],
 		data,
-		downloadEncoder:function(fileContents, mimeType){
-	        return new Blob([fileContents], {type:"text/plain;charset=utf-8"});
+		downloadEncoder: function (fileContents, mimeType) {
+			return new Blob([fileContents], {
+				type: "text/plain;charset=utf-8",
+			});
 		},
 		height: "100%",
 		initialHeaderFilter: filters,
@@ -239,7 +246,7 @@ async function main() {
 				<a href="https://www.fileformat.info/"><img id="favicon" src="/favicon.svg" class="pe-2 mb-1" style="height:1.5em;" alt="FileFormat.Info logo"/></a><span class="fw-bold">ISO 639-2</span>
 				<span id="rowcount" class="px-3">Rows: ${data.length.toLocaleString()}</span>
 				<span class="d-none d-md-inline">
-					<a class="px-1" id="download">Download \u279A</a>
+					Download: <a href="/iso-639-2.json">JSON</a> <a class="px-1" id="download">CSV</a>
 				</span>
 				<a class="d-none d-lg-block float-end" href="https://github.com/FileFormatInfo/iso-639-2">Source</a>
 			</span>`,

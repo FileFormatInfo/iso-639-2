@@ -10,7 +10,7 @@ set -o pipefail
 SCRIPT_HOME="$( cd "$( dirname "$0" )" && pwd )"
 BASE_DIR=$(realpath "${SCRIPT_HOME}/..")
 
-echo "INFO: starting ucd download at $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+echo "INFO: starting loc download at $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
 
 TMP_DIR="${BASE_DIR}/tmp"
 if [ ! -d "${TMP_DIR}" ]; then
@@ -27,4 +27,4 @@ curl \
 	--silent \
 	https://www.loc.gov/standards/iso639-2/ISO-639-2_utf-8.txt
 
-echo "INFO: completed ucd download at $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+echo "INFO: completed loc download at $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
